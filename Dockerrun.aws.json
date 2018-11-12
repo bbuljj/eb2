@@ -2,23 +2,10 @@
   "AWSEBDockerrunVersion": 1,
   "volumes": [
     {
-      "name": "fc-deploy-eb",
+      "name": "docker-eb2",
       "host": {
         "sourcePath": "var/app/current/docker_eb"
       }
-    }
-  ],
-  "containerDefinitions": [
-    {
-      "name": "fc-deploy-eb",
-      "essential": true,
-      "memory": 512,
-      "portMappings": [
-        {
-          "hostPort": 80,
-          "containerPort": 9002
-        }
-      ]
     }
   ]
 }
