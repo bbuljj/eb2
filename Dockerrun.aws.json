@@ -1,11 +1,10 @@
 {
-  "AWSEBDockerrunVersion": 1,
-  "volumes": [
+  "AWSEBDockerrunVersion": "1",
+  "Volumes": [
     {
-      "name": "docker-eb2",
-      "host": {
-        "sourcePath": "var/app/current/docker_eb"
-      }
+      "ContainerDirectory": "/var/app",
+      "HostDirectory": "/var/app"
     }
-  ]
+  ],
+  "Logging": "/var/eb_log"
 }
